@@ -6,14 +6,35 @@
 
 .user-info {
   background-color: var(--color-primary);
-  padding: 2rem;
+  padding-block: 2rem;
+  padding-inline: 2rem 4rem;
   border-radius: 15px;
+  min-height: 70%;
 }
 
 .user-icon {
-  height: 75px;
+  height: 80px;
   border: solid 3px white;
   border-radius: 50%;
+}
+
+.user-text {
+  margin-top: 10px;
+  padding-block: 1rem;
+}
+
+.user-text p:first-child {
+  margin-bottom: .25rem;
+  font-size: 14px;
+  color: var(--color-neutral-lightest);
+}
+
+.user-text p:last-child {
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 38px;
+  max-width: 150px;
 }
 
 .panel-controls {
@@ -30,7 +51,11 @@
   border: none;
   color: var(--color-neutral-lighter);
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   cursor: pointer;
+}
+
+.panel-controls button.active {
+  color: white;
 }

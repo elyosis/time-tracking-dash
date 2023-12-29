@@ -6,6 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [timeframe, setTimeframe] = useState("weekly");
+  const timeframes = Object.keys(data[0].timeframes);
 
   function changeTimeframe(newTimeframe) {
     setTimeframe(newTimeframe);
@@ -13,7 +14,11 @@ function App() {
 
   return (
     <div className={classes.container}>
-      <UserPanel onTimeframeSwitch={changeTimeframe} />
+      <UserPanel
+        onTimeframeSwitch={changeTimeframe}
+        timeframes={timeframes}
+        currentTimeframe={timeframe}
+      />
       {data.map((field) => {
         return (
           <Card
