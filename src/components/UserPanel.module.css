@@ -1,6 +1,7 @@
 .user-panel {
   background-color: var(--color-neutral-darker);
   border-radius: 15px;
+  grid-row: 1 / -1;
 }
 
 .user-info {
