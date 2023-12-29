@@ -1,14 +1,14 @@
 import IMAGES from "../images/Images";
 import classes from "./Card.module.css";
 
-function Card() {
+function Card(props) {
   return (
     <div className={classes.card}>
       {/* Info div */}
       <div className={classes["card-content"]}>
         {/* Name/menu*/}
         <div className={classes["card-menu"]}>
-          <p>Work</p>
+          <p>{props.title}</p>
           <div className={classes["menu-icon"]}>
             <img src={IMAGES.ellipsis} alt="" />
           </div>
@@ -17,9 +17,9 @@ function Card() {
         {/* Time display */}
         <div className={classes["card-info"]}>
           {/* Current hours */}
-          <p>32hrs</p>
+          <p>{props.data.weekly.current}hrs</p>
           {/* Past hours */}
-          <p>Last Week - 36hrs</p>
+          <p>Last Week - {props.data.weekly.previous}hrs</p>
         </div>
       </div>
     </div>
