@@ -25,7 +25,8 @@ body {
   margin: 0;
   background: var(--color-neutral-darkest);
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   font-size: 18px;
   font-family: "Rubik", sans-serif;
