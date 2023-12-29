@@ -1,0 +1,20 @@
+.user-panel {
+  background-color: var(--color-neutral-darker);
+  border-radius: 15px;
+}
+
+.user-info {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.user-icon {
+  height: 75px;
+  border: solid 3px white;
+  border-radius: 50%;
+}
+
+.panel-controls {
+  padding: 2rem;
+}
