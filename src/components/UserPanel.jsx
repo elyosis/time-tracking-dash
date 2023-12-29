@@ -1,7 +1,12 @@
 import IMAGES from "../images/Images";
 import classes from "./UserPanel.module.css";
 
-function UserPanel() {
+function UserPanel(props) {
+
+  function buttonHandler(value) {
+    props.onTimeframeSwitch(value);
+  }
+
   return (
     <div className={classes["user-panel"]}>
       {/* User info */}
@@ -15,9 +20,9 @@ function UserPanel() {
 
       {/* Panel controls */}
       <div className={classes["panel-controls"]}>
-        <p>Daily</p>
-        <p>Weekly</p>
-        <p>Monthly</p>
+        <button onClick={() => {buttonHandler("daily")}}>Daily</button>
+        <button onClick={() => {buttonHandler("weekly")}}>Weekly</button>
+        <button onClick={() => {buttonHandler("monthly")}}>Monthly</button>
       </div>
     </div>
   );
