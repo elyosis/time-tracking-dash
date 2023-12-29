@@ -1,0 +1,30 @@
+.card {
+  background-color: var(--color-work);
+  padding-top: 2.5rem;
+  border-radius: 15px;
+}
+
+.card-content {
+  padding: .5rem 2rem;
+  background-color: var(--color-neutral-darker);
+  z-index: 2;
+  border-radius: 12px;
+}
+
+.card-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+}
