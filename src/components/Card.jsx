@@ -3,9 +3,12 @@ import classes from "./Card.module.css";
 
 function Card(props) {
   const { title, data, timeframe } = props;
+  const classFormattedTitle = title.toLowerCase().replace(" ", "-");
+  const srcFormattedTitle = title.toLowerCase().replace(/\s/g, "");
 
   return (
-    <div className={classes.card}>
+    <div className={`${classes.card} ${classes[`card-${classFormattedTitle}`]}`}>
+      <img src={IMAGES[srcFormattedTitle]} alt="" />
       {/* Info div */}
       <div className={classes["card-content"]}>
         {/* Name/menu*/}

@@ -1,18 +1,27 @@
 .card {
-  background-color: var(--color-work);
   padding: 0;
-  padding-top: 2.5rem;
+  padding-top: 2.75rem;
   border-radius: 15px;
+  position: relative;
+  contain: paint;
+}
+
+.card > img {
+  position: absolute;
+  right: 1.25rem;
+  z-index: 1;
 }
 
 .card-content {
+  position: relative;
   padding: .5rem 2rem;
   background-color: var(--color-neutral-darker);
   z-index: 2;
-  border-radius: 12px;
+  border-radius: 15px 15px 10px 10px;
 }
 
 .card-menu {
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,4 +37,52 @@
 .menu-icon {
   display: flex;
   align-items: center;
+}
+
+.card-work {
+  background-color: var(--color-work);
+}
+
+.card-work > img {
+  top: -.75rem;
+}
+
+.card-play {
+  background-color: var(--color-play);
+}
+
+.card-play > img {
+  top: -.35rem;
+}
+
+.card-study {
+  background-color: var(--color-study);
+}
+
+.card-study > img {
+  top: -.5rem;
+}
+
+.card-exercise {
+  background-color: var(--color-exercise);
+}
+
+.card-exercise > img {
+  top: -.05rem;
+}
+
+.card-social {
+  background-color: var(--color-social);
+}
+
+.card-social > img {
+  top: -.9rem;
+}
+
+.card-self-care {
+  background-color: var(--color-self-care);
+}
+
+.card-self-care > img {
+  top: -.75rem;
 }
