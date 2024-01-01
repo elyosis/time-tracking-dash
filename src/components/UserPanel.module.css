@@ -56,6 +56,7 @@
   cursor: pointer;
 }
 
+.panel-controls button:hover,
 .panel-controls button.active {
   color: white;
 }

@@ -7,7 +7,7 @@
 }
 
 .card-top {
-  padding-block: 1.5rem;
+  padding-block: 1.75rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   position: relative;
@@ -38,6 +38,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
+}
+
+.menu-icon img:hover {
+  cursor: pointer;
+  filter: brightness(1.5);
 }
 
 .card-info {
@@ -113,7 +118,7 @@
 @media (max-width: 1000px) {
 
   .card-grid {
-    grid-template-rows: 42px 15px 1fr;
+    grid-template-rows: 32px 12px 1fr;
   }
 
   .card-bottom {
