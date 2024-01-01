@@ -7,10 +7,17 @@ function Card(props) {
   const srcFormattedTitle = title.toLowerCase().replace(/\s/g, "");
 
   return (
-    <div className={`${classes.card} ${classes[`card-${classFormattedTitle}`]}`}>
-      <img src={IMAGES[srcFormattedTitle]} alt="" />
-      {/* Info div */}
-      <div className={classes["card-content"]}>
+    <div className={classes["card-grid"]}>
+      {/* Top card */}
+      <div
+        className={`${classes["card-top"]} ${
+          classes[`card-${classFormattedTitle}`]
+        }`}
+      >
+        <img src={IMAGES[srcFormattedTitle]} alt="" />
+      </div>
+      {/* Bottom card */}
+      <div className={classes["card-bottom"]}>
         {/* Name/menu*/}
         <div className={classes["card-menu"]}>
           <p>{title}</p>
