@@ -2,6 +2,8 @@
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). It's done using CSS Grid for the main layout, and React to add the dynamic timeframe-switching functionality.
 
+A live version of the dash can be seen [here](https://time-tracking-dash-elyosis.netlify.app/).
+
 ## Overview
 
 ### The challenge
