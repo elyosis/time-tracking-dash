@@ -59,3 +59,35 @@
 .panel-controls button.active {
   color: white;
 }
+
+@media (max-width: 1000px) {
+  .user-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-block: .25rem;
+    padding-inline: 2rem;
+    min-height: auto;
+  }
+
+  .user-icon {
+    height: 70px;
+  }
+
+  .user-text {
+    margin-top: 0;
+    padding-block: 1.5rem;
+  }
+
+  .user-text p:last-child {
+    font-size: 23px;
+    max-width: fit-content;
+  }
+
+  .panel-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+    padding-inline: 2rem;
+  }
+}

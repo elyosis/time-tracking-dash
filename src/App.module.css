@@ -3,4 +3,12 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1.75rem;
+  margin: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
